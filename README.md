@@ -57,5 +57,5 @@ output {
             user => "elastic"
             password => "changeme"
          }
-        } 
+} 
 ```
