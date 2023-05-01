@@ -1,6 +1,8 @@
 # elk-demo
 
-elk 환경에서 batch 로 실행한 데이터가 logstash로 전송되고 이를 elastic 에 저장 - kibana로 확인하는 기본적인 구성.
+elk 환경에서 batch 로 실행한 데이터가 logstash로 전송되고 이를 elastic 에 저장 - kibana로 확인하는 기본적인 구성.   
+(docker-elk)[https://github.com/yurim022/docker-elk-custom] 로 구성한 elk 클러스터 (단일모드) 를 활용한다.
+
 
 <img width="863" alt="image" src="https://user-images.githubusercontent.com/45115557/235416632-4006146b-2afc-4327-901d-8985e8e12ea0.png">
 
@@ -13,6 +15,8 @@ elk 환경에서 batch 로 실행한 데이터가 logstash로 전송되고 이�
 ```
 
 ### logback.xml 일부
+
+logstash에 tcp 방식으로 전송한다.
 
 ```java
 
