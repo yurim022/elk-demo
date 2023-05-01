@@ -36,3 +36,24 @@ logstash에 tcp 방식으로 전송한다.
 ```
 logging.config: classpath:logback.xml
 ```
+
+
+cf) [docker-elk](https://github.com/yurim022/docker-elk-custom) logstash의 config 파일을 다음과 같이 수정해준다. 
+
+```
+input {
+
+        tcp {
+                port => 5000
+                codec => json_lines
+        }
+}
+
+output {
+        elasticsearch {
+            hosts => "elasticsearch:9200"
+            index => "logstash-20230430"
+            user => "elastic"
+            password => "changeme"
+         }
+```
