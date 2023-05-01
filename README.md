@@ -37,8 +37,9 @@ logstash에 tcp 방식으로 전송한다.
 logging.config: classpath:logback.xml
 ```
 
+<br><br>
 
-cf) [docker-elk](https://github.com/yurim022/docker-elk-custom) logstash의 config 파일을 다음과 같이 수정해준다. 
+[docker-elk](https://github.com/yurim022/docker-elk-custom) logstash의 config 파일을 다음과 같이 수정해준다. 
 
 ```
 input {
